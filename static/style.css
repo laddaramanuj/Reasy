@@ -1,0 +1,72 @@
+/* Moving background animation */
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Add borders to the table */
+#resultsTable {
+    border-collapse: collapse; /* Ensures that the borders collapse into a single border */
+    width: 100%; /* Optional: Make the table full width */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#resultsTable th, #resultsTable td {
+    border: 1px solid #ddd; /* Set the border color */
+    padding: 8px; /* Padding inside each cell */
+}
+
+#resultsTable th {
+    background-color: #f2f2f2; /* Optional: Light gray background for header */
+}
+
+/* Optional: Change the color of borders on hover */
+#resultsTable tr:hover {
+    background-color: #f1f1f1; /* Optional: Highlight row on hover */
+}
+
+/* Styling the container */
+.container {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    height: 25vh;
+    transition: height 0.5s ease;
+    align-items: center;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.form-control{
+    border-radius : 2px;
+    border: 1px solid black;
+}
